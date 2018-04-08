@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { AddExpensePage } from '../add-expense/add-expense';
 
 /**
  * Generated class for the ManagementPage page.
@@ -15,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ManagementPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
@@ -48,5 +49,10 @@ export class ManagementPage {
 
   addItem() {
     this.items.push("New Item!");
+  }
+
+  presentProfileModal() {
+    let profileModal = this.modalCtrl.create(AddExpensePage, { userId: 8675309 });
+    profileModal.present();
   }
 }
