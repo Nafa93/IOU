@@ -5,17 +5,21 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { ManagementPage } from '../pages/management/management';
 import { AddExpensePage } from '../pages/add-expense/add-expense';
 import { ExpensesProvider } from '../providers/expenses/expenses';
 import { SideMenuComponent } from '../components/side-menu/side-menu';
+import { ExpensesDisplayPage } from '../pages/expenses-display/expenses-display';
+import { GenericHeaderComponent } from '../components/generic-header/generic-header';
+import { ManagementPage } from '../pages/management/management';
 
 @NgModule({
   declarations: [
     MyApp,
-    ManagementPage,
+    ExpensesDisplayPage,
     AddExpensePage,
-    SideMenuComponent
+    SideMenuComponent,
+    GenericHeaderComponent,
+    ManagementPage
   ],
   imports: [
     BrowserModule,
@@ -24,9 +28,11 @@ import { SideMenuComponent } from '../components/side-menu/side-menu';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    ManagementPage,
+    ExpensesDisplayPage,
     AddExpensePage,
-    SideMenuComponent
+    SideMenuComponent,
+    GenericHeaderComponent,
+    ManagementPage
   ],
   providers: [
     StatusBar,

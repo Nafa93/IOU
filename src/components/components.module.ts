@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { SideMenuComponent } from './side-menu/side-menu';
+import { GenericHeaderComponent } from './generic-header/generic-header';
 @NgModule({
-	declarations: [SideMenuComponent],
+	declarations: [SideMenuComponent,
+    GenericHeaderComponent],
 	imports: [],
-	exports: [SideMenuComponent]
+	exports: [SideMenuComponent,
+    GenericHeaderComponent]
 })
 export class ComponentsModule {}

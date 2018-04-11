@@ -3,6 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { ExpensesDisplayPage } from '../pages/expenses-display/expenses-display';
 import { ManagementPage } from '../pages/management/management';
 
 @Component({
