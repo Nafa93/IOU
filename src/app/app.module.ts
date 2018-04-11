@@ -8,12 +8,14 @@ import { MyApp } from './app.component';
 import { ManagementPage } from '../pages/management/management';
 import { AddExpensePage } from '../pages/add-expense/add-expense';
 import { ExpensesProvider } from '../providers/expenses/expenses';
+import { SideMenuComponent } from '../components/side-menu/side-menu';
 
 @NgModule({
   declarations: [
     MyApp,
     ManagementPage,
-    AddExpensePage
+    AddExpensePage,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { ExpensesProvider } from '../providers/expenses/expenses';
   entryComponents: [
     MyApp,
     ManagementPage,
-    AddExpensePage
+    AddExpensePage,
+    SideMenuComponent
   ],
   providers: [
     StatusBar,
